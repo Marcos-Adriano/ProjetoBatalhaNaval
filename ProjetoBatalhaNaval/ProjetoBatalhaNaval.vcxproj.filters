@@ -27,9 +27,6 @@
     <ClCompile Include="Tabuleiro.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cliente.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Uteis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -42,9 +39,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tabuleiro.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Cliente.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Uteis.h">

@@ -127,7 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Jogador.cpp" />
     <ClCompile Include="Navio.cpp" />
     <ClCompile Include="Servidor.cpp" />
@@ -135,7 +134,6 @@
     <ClCompile Include="Uteis.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cliente.h" />
     <ClInclude Include="Jogador.h" />
     <ClInclude Include="Navio.h" />
     <ClInclude Include="Tabuleiro.h" />

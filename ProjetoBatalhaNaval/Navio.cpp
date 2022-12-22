@@ -1,8 +1,21 @@
 #include "Navio.h"
 
-int tam;
+int Navio::getTamanho()
+{
+	return tamanho;
+}
 
-TIPO_NAVIO tipo;
+void Navio::setTamanho(int tamanho)
+{
+	this->tamanho = tamanho;
+}
 
-// Vector para armazenar as coordenadas no navio
-std::vector<std::pair<int, int>> posicoes;
+TIPO_NAVIO Navio::getTipo()
+{
+	return tipo;
+}
+
+void Navio::setTipo(TIPO_NAVIO tipo)
+{
+	this->tipo = tipo;
+}
