@@ -115,6 +115,22 @@ void esperaThreads()
 	}
 }
 
+void fecharConexoes()
+{
+	static int byteCount;
+	while (true)
+	{
+		for (int i = 0; i < maxJogadores; i++)
+		{
+			if (byteCount = recv(ClientSocket[i], buffer, 1024, 0) == 0)
+			{
+				closesocket(ClientSocket[i]);
+				return;
+			}
+		}
+	}
+}
+
 int main()
 {
 	// Configurando para português
@@ -130,11 +146,10 @@ int main()
 
 	esperaThreads();
 
-	// Aqui o jogo em si começa a rodar até jogo retornar false
-	while (tabuleiro[0].jogo(tabuleiro[0], tabuleiro[1], jogador[0], jogador[1], ClientSocket[0], ClientSocket[1]) == true)
-
-	closesocket(ClientSocket[0]);
-	closesocket(ClientSocket[1]);
+	// Aqui o jogo em si começa a rodar
+	tabuleiro[0].jogo(tabuleiro[0], tabuleiro[1], jogador[0], jogador[1], ClientSocket[0], ClientSocket[1]);
+	
+	//fecharConexoes();
 	closesocket(servidorSocket);
 	WSACleanup(); 
 	std::cout << "O jogo terminou!\n";

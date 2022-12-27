@@ -20,7 +20,6 @@ void Jogador::setNome(SOCKET& socket)
 	send(socket, buffer, sizeof(buffer), 0);
 
 	recv(socket, buffer, sizeof(buffer), 0);
-
 	this->nome = buffer;
 	//this->nome.assign(buffer, sizeof(buffer));
 }
