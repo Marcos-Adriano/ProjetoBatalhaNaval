@@ -39,10 +39,10 @@ public:
 	Estado getEstado();
 
 	// Quantidades de cada navio disponivel por jogador
-	const int qtdSubmarinos{ 1 };       //tipo-1
-	const int qtdContraTorpedos{ 0 };   //tipo-2
-	const int qtdNaviosTanque{ 0 };     //tipo-3
-	const int qtdPortaAvioes{ 0 };      //tipo-4
+	const int qtdSubmarinos{ 3 };       //tipo-1
+	const int qtdContraTorpedos{ 2 };   //tipo-2
+	const int qtdNaviosTanque{ 1 };     //tipo-3
+	const int qtdPortaAvioes{ 1 };      //tipo-4
 
 	// Nome do jogador
 	void setNome(SOCKET& socket);
